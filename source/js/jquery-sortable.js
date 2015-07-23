@@ -462,7 +462,7 @@
     this.rootGroup = this.options.rootGroup || this.group
     this.handle = this.rootGroup.options.handle || this.rootGroup.options.itemSelector
 
-    var itemPath = this.rootGroup.options.itemPath
+    var itemPath = this.options.itemPath
     this.target = itemPath ? this.el.find(itemPath) : this.el
 
     this.target.on(eventNames.start, this.handle, $.proxy(this.dragInit, this))
